@@ -1,0 +1,10 @@
+Options +FollowSymlinks
+RewriteEngine On
+
+Options -Indexes
+
+RewriteRule ^$ Kernel/theDoors.php?Page=Home [L]
+RewriteRule ^S/([a0-z9_]*):([a0-z9_]*)$ Kernel/theDoors.php?Page=$1&Script=true&$1=$2 [QSA,L]
+RewriteRule ^S/([a0-z9_]*)$ Kernel/theDoors.php?Page=$1&Script=true [QSA,L]
+RewriteRule ^([a0-z9_]*):([a0-z9_]*)$ Kernel/theDoors.php?Page=$1&$1=$2 [QSA,L]
+RewriteRule ^([a0-z9_]*)$ Kernel/theDoors.php?Page=$1 [QSA,L]
