@@ -1,0 +1,26 @@
+
+.header-wrapper {
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-options {
+    display: inline-block;
+    width: 200px;
+    line-height: 60px;
+    list-style-type: none;
+    font-family: "Lato Light";
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-options:hover {
+    background: rgba(180,180,180,.5);
+    color: rgba(255,255,255,.9);
+}
+
+.selected-menu {
+    background: rgba(180,180,180,.5);
+    color: #ffffff;
+}
