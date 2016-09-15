@@ -1,8 +1,17 @@
 
-.header-wrapper {
-    height: 60px;
+header {
     margin: 0 auto;
     text-align: center;
+}
+
+.header-title {
+    padding: 20px;
+    font-size: 34px;
+    font-family: "Lato Light";
+}
+
+.header-title > i {
+    font-size: 16px !important;
 }
 
 .menu-options {
@@ -23,4 +32,17 @@
 .selected-menu {
     background: rgba(180,180,180,.5);
     color: #ffffff;
+}
+
+.unicornUi-github {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: "Lato Light";
+}
+
+.unicornUi-github i {
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
