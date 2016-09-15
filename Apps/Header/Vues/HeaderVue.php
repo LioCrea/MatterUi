@@ -8,7 +8,7 @@
 /**
  * Description of HeaderVue
  *
- * @author guich
+ * @author lio
  */
 class HeaderVue extends IVue {
     public function __toString() {

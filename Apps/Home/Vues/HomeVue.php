@@ -8,7 +8,7 @@
 /**
  * Description of HomeVue
  *
- * @author guich
+ * @author lio
  */
 class HomeVue extends IVue {
     public function __toString() {
