@@ -23,7 +23,8 @@ class HeaderVue extends IVue {
                 </div>
                 <header>
                     <ul>
-                        <li class="menu-options selected-menu" data-url="Buttons"> Buttons </li>
+                        <li class="menu-options selected-menu" data-url="Colors"> Colors </li>
+                        <li class="menu-options" data-url="Buttons"> Buttons </li>
                         <li class="menu-options" data-url="Inputs"> Inputs </li>
                         <li class="menu-options" data-url="Logins"> Login Stuffs </li>
                     </ul>

@@ -1,0 +1,45 @@
+
+.ui-wrapper {
+    margin: 20px auto;
+}
+
+h1, h2 {
+    padding-left: 10px;
+    color: #7f8c8d;
+    font-family: "Lato Light";
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.xs-line {
+    width: 70%;
+    height: 1px;
+    margin: 10px;
+    background: #7f8c8d;
+}
+
+.colors-wrapper {
+    text-align: center;
+}
+
+.square {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 2px 0 0 0;
+    text-align: center;
+    border: none;
+}
+
+.square p {
+    line-height: 120px;
+    color: #ffffff;
+    font-family: "Lato Light";
+    font-size: 22px;
+}
