@@ -1,4 +1,79 @@
 
-.Logins {
-    /* YOUR CODE */
+.shadow {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(180, 180, 180, .5);
+}
+
+.login-dft {
+    position: absolute;
+    z-index: 100;
+    width: 50%;
+    min-height: 400px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    webkit-transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.login-int {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    webkit-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login-dft-title {
+    padding: 2px;
+    font-family: "Lato Light";
+    font-size: 20px;
+}
+
+.label-dft {
+    padding: 10px;
+    color: #93a3b5;
+    font-family: "Lato Light";
+}
+
+.input-dft {
+    width: 90%;
+    padding-left: 6px;
+    border: 1px solid #93a3b5;
+    font-family: "Lato Light";
+    font-size: 18px;
+    color: #93a3b5;
+}
+
+.dft-btn {
+    display: block !important;
+    margin: 20px auto;
+}
+
+.switch-dft {
+    margin: 4px auto;
+    padding: 10px;
+    font-family: "Lato Light";
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sh-active {    
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(129,129,129,1);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(129,129,129,1);
+    box-shadow: 1px 1px 1px 0px rgba(129,129,129,1);
+}
+
+/* Sign Up stuffs */
+
+.non-active {
+    display: none;
 }
