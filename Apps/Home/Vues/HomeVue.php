@@ -18,9 +18,9 @@ class HomeVue extends IVue {
             <div class="main-wrapper">
         ';
 
-        FactoryClass::importClassApps("Colors", "ColorsCtrl");
-        $colorsCtrl = new ColorsCtrl();
-        $this->content .= Dispatcher::Forward($colorsCtrl);
+        FactoryClass::importClassApps("Inputs", "InputsCtrl");
+        $inputsCtrl = new InputsCtrl();
+        $this->content .= Dispatcher::Forward($inputsCtrl);
 
         $this->content .= ' 
             </div>

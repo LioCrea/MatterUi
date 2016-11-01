@@ -1,87 +1,4 @@
 
-.input-mega-wrapper {
-    margin: 20px auto;
-    text-align: center;
-}
-
-.input-wrapper {
-    padding: 1px;
-    transition: .3s;
-}
-
-.input-dft-wrapper {
-    padding-left: 20px;
-    text-align: left;
-    font-family: "Lato Light";
-}
-
-.input-dft-icon {
-    width: 10%;
-}
-
-.input-dft-search {
-    width: 69%;
-}
-
-.input-dft-btn {
-    width: 20%;
-    text-align: right;
-}
-
-.input-std {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-}
-
-.input-std > i {
-    line-height: 52px;
-    margin-right: 4px;
-    font-size: 41px;
-}
-
-.input-dft-search > input,
-.input-dft-btn > button {
-    border: none;
-}
-
-.input-dft-search > input{
-    width: 90%;
-    height: 52px;
-    padding-left: 4px;
-    font-size: 34px;
-}
-
-.input-dft-btn > button {
-    width: 100%;
-    height: 56px;
-    padding: 0 20px;
-    font-size: 22px;
-    transition: .2s;
-}
-
-/*.input-wrapper:hover {*/
-    /*background: #7f8c8d;*/
-/*}*/
-
-.input-dft-search > input:focus {
-    outline: none;
-}
-
-.search-results-wrapper {
-    height: 0;
-    background: rgba(160,160,160,.15);
-    transition: .4s;
-}
-
-.disable {
-    cursor: not-allowed;
-}
-
-
-
-
-
 /*GREY STYLE*/
 
 /*Apply to input-wrapper*/
@@ -137,7 +54,6 @@
 .sunset-bg {
     background: #e67e22;
 }
-
 .white-cl {
     color: #ffffff;
 }
@@ -185,7 +101,6 @@
 .blue-lagoon-btn-active {
     background: #2980b9;
 }
-
 
 
 /*BLOODY STYLE*/

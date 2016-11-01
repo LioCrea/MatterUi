@@ -9,8 +9,86 @@
 class InputsVue extends IVue {
     public function __toString() {
         $this->content = '
-		    Inputs view
+		            <div class="input-mega-wrapper">
+		                <div class="input input-std input-wrapper wrapper-grey-style">
+		                    <div class="input-dft-wrapper">
+		                        <div class="input-std input-dft-icon">
+		                            <i class="fa fa-globe" aria-hidden="true"></i>
+                                </div>
+                                <div class="input-std input-dft-search search-bar">
+                                    <input type="text">
+                                </div>
+                            </div>
+		                </div>
+                        <div class="input-std input-dft-btn sticked-on">
+                            <button class="disable"> Go! </button>
+                        </div>
+		                <div class="search-results-wrapper">
+		                    <div class="results search-results"></div>
+                        </div>
+                    </div>
+		            <div class="input-mega-wrapper">
+		                <div class="input input-std input-wrapper wrapper-sunset-style">
+		                    <div class="input-dft-wrapper">
+		                        <div class="input-std input-dft-icon">
+		                            <i class="fa fa-globe" aria-hidden="true"></i>
+                                </div>
+                                <div class="input-std input-dft-search search-bar">
+                                    <input type="text">
+                                </div>
+                            </div>
+		                </div>
+                        <div class="input-std input-dft-btn sticked-on">
+                            <button class="disable"> Go! </button>
+                        </div>
+		                <div class="search-results-wrapper">
+		                    <div class="results search-results"></div>
+                        </div>
+                    </div>
+		            <div class="input-mega-wrapper">
+		                <div class="input input-std input-wrapper wrapper-blue-lagoon-style">
+		                    <div class="input-dft-wrapper">
+		                        <div class="input-std input-dft-icon">
+		                            <i class="fa fa-globe" aria-hidden="true"></i>
+                                </div>
+                                <div class="input-std input-dft-search search-bar">
+                                    <input type="text">
+                                </div>
+                            </div>
+		                </div>
+                        <div class="input-std input-dft-btn sticked-on">
+                            <button class="disable"> Go! </button>
+                        </div>
+		                <div class="search-results-wrapper">
+		                    <div class="results search-results"></div>
+                        </div>
+                    </div>
+		            <div class="input-mega-wrapper">
+		                <div class="input input-std input-wrapper wrapper-bloody-style">
+		                    <div class="input-dft-wrapper">
+		                        <div class="input-std input-dft-icon">
+		                            <i class="fa fa-globe" aria-hidden="true"></i>
+                                </div>
+                                <div class="input-std input-dft-search search-bar">
+                                    <input type="text">
+                                </div>
+                            </div>
+		                </div>
+                        <div class="input-std input-dft-btn sticked-on">
+                            <button class="disable"> Go! </button>
+                        </div>
+		                <div class="search-results-wrapper">
+		                    <div class="results search-results"></div>
+                        </div>
+                    </div>
         ';
+
+        $js = '
+            var inputs = new Inputs();
+            inputs.init();
+        ';
+        $this->content .= Utils::insertJavaScriptCode($js);
+
 
         return $this->generate();
     }
