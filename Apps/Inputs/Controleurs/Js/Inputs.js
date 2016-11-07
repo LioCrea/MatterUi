@@ -4,6 +4,11 @@ Inputs.prototype = {
     eventListeners: function () {
         var This = this;
 
+        // on load... wait
+        setTimeout( function () {
+            This.calculatedWidth();
+        },800);
+
         // check all input-wrapper
         $('.input-mega-wrapper').each( function () {
            var that= $(this);
@@ -12,95 +17,73 @@ Inputs.prototype = {
             var fo= that.find($('.input-std > i'));
             var input= that.find($('.input-dft-search input'));
             var btn= that.find($('.input-dft-btn button'));
-
+            var classesName= wrapper.attr('class');
+            var className= classesName.substr(classesName.indexOf("wrapper-") + 8);
+            // catch color only
+            var colorName= className.substr(0, className.indexOf("-style"));
             //set custom colors classes
-            if(wrapper.hasClass('wrapper-grey-style')) {
-                wrapper.addClass('grey-b-input-wrapper');
-                dftWrapper.addClass('white-bg');
-                fo.addClass('grey-cl');
-                input.addClass('grey-cl');
-                btn.addClass('grey-bg white-cl');
-
-                wrapper.hover( function () {
-                    $(this).addClass('input-grey-hover');
-                }, function () {
-                    $(this).removeClass('input-grey-hover');
-                })
-            } else if(wrapper.hasClass('wrapper-sunset-style')) {
-                wrapper.addClass('sunset-b-input-wrapper');
-                dftWrapper.addClass('white-bg');
-                fo.addClass('sunset-cl');
-                input.addClass('sunset-cl');
-                btn.addClass('sunset-bg white-cl');
-
-                wrapper.hover( function () {
-                    $(this).addClass('input-sunset-hover');
-                }, function () {
-                    $(this).removeClass('input-sunset-hover');
-                })
-            } else if(wrapper.hasClass('wrapper-blue-lagoon-style')) {
-                wrapper.addClass('blue-lagoon-b-input-wrapper');
-                dftWrapper.addClass('white-bg');
-                fo.addClass('blue-lagoon-cl');
-                input.addClass('blue-lagoon-cl');
-                btn.addClass('blue-lagoon-bg white-cl');
-
-                wrapper.hover( function () {
-                    $(this).addClass('input-blue-lagoon-hover');
-                }, function () {
-                    $(this).removeClass('input-blue-lagoon-hover');
-                })
-            } else if(wrapper.hasClass('wrapper-bloody-style')) {
-                wrapper.addClass('bloody-b-input-wrapper');
-                dftWrapper.addClass('white-bg');
-                fo.addClass('bloody-cl');
-                input.addClass('bloody-cl');
-                btn.addClass('bloody-bg white-cl');
-
-                wrapper.hover( function () {
-                    $(this).addClass('input-bloody-hover');
-                }, function () {
-                    $(this).removeClass('input-bloody-hover');
-                })
-            }
+            This.inputDesignSetup(wrapper, dftWrapper, fo, input, btn, colorName);
         });
 
         $(window).on('resize', function () {
             This.calculatedWidth();
         });
-        setTimeout( function () {
-            This.calculatedWidth();
-        },800);
+
         $('input').on('keyup', function () {
+            var length= $(this).val();
+            var classesName= $(this).closest('.input-wrapper').attr('class');
+            var className= classesName.substr(classesName.indexOf("wrapper-") + 8);
+            var colorName= className.substr(0, className.indexOf("-style"));
             var stdBtn= $(this).closest('.input-mega-wrapper').find($('button'));
-            if($(this).val().length >1) {
-                stdBtn.removeClass('disable');
-                //check btn dft class
-                if(stdBtn.hasClass('grey-bg'))
-                    stdBtn.addClass('grey-btn-active');
-                else if(stdBtn.hasClass('sunset-bg'))
-                    stdBtn.addClass('sunset-btn-active');
-                else if(stdBtn.hasClass('blue-lagoon-bg'))
-                    stdBtn.addClass('blue-lagoon-btn-active');
-                else if(stdBtn.hasClass('bloody-bg'))
-                    stdBtn.addClass('bloody-btn-active');
-            } else {
-                stdBtn.addClass('disable');
-                if(stdBtn.hasClass('grey-bg'))
-                    stdBtn.removeClass('grey-btn-active');
-                else if(stdBtn.hasClass('sunset-bg'))
-                    stdBtn.removeClass('sunset-btn-active');
-                else if(stdBtn.hasClass('blue-lagoon-bg'))
-                    stdBtn.removeClass('blue-lagoon-btn-active');
-                else if(stdBtn.hasClass('bloody-bg'))
-                    stdBtn.removeClass('bloody-btn-active');
-            }
+            This.toggleDisable(length, stdBtn, colorName);
         });
     },
 
+    // functions to design inputs on load
+    inputDesignSetup: function (wrapper, dftWrapper, fo, input, btn, colorName) {
+        var This= this;
+        wrapper.addClass(colorName + '-b-input-wrapper');
+        dftWrapper.addClass('white-bg');
+        fo.addClass(colorName + '-cl');
+        input.addClass(colorName + '-cl');
+        btn.addClass(colorName + '-bg white-cl');
+        This.inputDesignOnHover(wrapper, colorName);
+    },
+
+    inputDesignOnHover: function (wrapper, colorName) {
+        wrapper.hover( function () {
+            $(this).addClass('input-' + colorName + '-hover');
+        }, function () {
+            $(this).removeClass('input-' + colorName + '-hover');
+        });
+    },
+
+    // function to toggle disable state
+    toggleDisable: function (length, stdBtn, colorName) {
+        //check btn dft class
+        if(length.length >1) {
+            stdBtn.removeClass('disable');
+            stdBtn.addClass(colorName + '-btn-active');
+        } else {
+            stdBtn.addClass('disable');
+            stdBtn.removeClass(colorName + '-btn-active');
+        }
+    },
+
+    // responsive resize
     calculatedWidth: function () {
         var initWidth= 10+parseInt($('.input-dft-wrapper').css('padding-left'))+parseInt($('.input-dft-icon').css('width'))+parseInt($('.input-dft-search').css('width'));
         $('.search-results-wrapper').css({width: initWidth + 'px'});
+
+        // media-query on buttons
+        var dftButton= $('.input-dft-btn');
+        if(parseInt($(window).width(), 10) < 660) {
+            dftButton.addClass('BtnWrapperXsScreens');
+            dftButton.css({width : $('.input-wrapper').width()});
+        } else {
+            dftButton.removeClass('BtnWrapperXsScreens');
+            dftButton.css({width : '20%'});
+        }
     },
 
     init: function () {

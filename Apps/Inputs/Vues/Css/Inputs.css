@@ -221,3 +221,13 @@
 .bloody-btn-active {
     background: rgb(255,57,43);
 }
+
+/* SMALL SCREEN BTN BEHAVIOR */
+.BtnWrapperXsScreens {
+    display: block;
+    width: 100%;
+    margin: 4px auto;
+}
+
+.blockButton {
+}
