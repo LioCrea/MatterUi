@@ -57,7 +57,7 @@ class="input-stretcher dft-stretcher"
 ```
 The default transition is 0.2s. Feel free to change it directly in the CSS file.
 
-- Using Fontawesome libs
+- Using FontAwesome libs
 
 We use FontAwesome libraries in order to put some nice stuffs next to the inputs. Removing the base will just extra stretch the input.
 
