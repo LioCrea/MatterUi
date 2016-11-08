@@ -78,8 +78,26 @@
     cursor: not-allowed;
 }
 
+/*DYNAMIC INPUTS*/
 
+.input-stretcher {
+    display: inline-block;
+    vertical-align: top;
+    width: 37%;
+    transition: .2s;
+}
 
+.input-stretcher > .input-wrapper {
+    width: 100%;
+}
+
+.input-stretched > input {
+    width: 129%;
+}
+
+.full-width {
+    width: 78%;
+}
 
 
 /*GREY STYLE*/

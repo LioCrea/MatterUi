@@ -37,6 +37,14 @@ Inputs.prototype = {
             var stdBtn= $(this).closest('.input-mega-wrapper').find($('button'));
             This.toggleDisable(length, stdBtn, colorName);
         });
+
+        $('.input-stretched > input').on('focus', function () {
+            var beStretched= $(this).closest('.input-stretcher');
+            This.stretcher(beStretched, true);
+        }).blur( function () {
+            var beStretched= $(this).closest('.input-stretcher');
+            This.stretcher(beStretched, false);
+        })
     },
 
     // functions to design inputs on load
@@ -83,6 +91,17 @@ Inputs.prototype = {
         } else {
             dftButton.removeClass('BtnWrapperXsScreens');
             dftButton.css({width : '20%'});
+        }
+    },
+
+    // stretched input
+    stretcher: function (beStretched, bool) {
+        switch (bool) {
+            case true:
+                beStretched.addClass('full-width');
+                break;
+            case false:
+                beStretched.removeClass('full-width');
         }
     },
 

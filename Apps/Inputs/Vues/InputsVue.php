@@ -9,6 +9,11 @@
 class InputsVue extends IVue {
     public function __toString() {
         $this->content = '
+                <div class="section-wrapper">
+                    <h1>Default Input </h1>
+                    <div class="desc">
+                        Set the color you want as a secondary class.
+                    </div>
 		            <div class="input-mega-wrapper">
 		                <div class="input input-std input-wrapper wrapper-grey-style">
 		                    <div class="input-dft-wrapper">
@@ -81,6 +86,94 @@ class InputsVue extends IVue {
 		                    <div class="results search-results"></div>
                         </div>
                     </div>
+                </div> <!-- end section -->
+                <div class="section-wrapper">
+                    <h1>Dynamic Input </h1>
+                    <div class="desc">
+                        Set the color you want as a secondary class. <br />
+                        The input will dynamically enlarge when you focus on it.
+                    </div>
+		            <div class="input-mega-wrapper">
+		                <div class="input-stretcher dft-stretcher">
+                            <div class="input input-std input-wrapper wrapper-grey-style">
+                                <div class="input-dft-wrapper">
+                                    <div class="input-std input-dft-icon">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="input-stretched input-std input-dft-search search-bar">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="input-std input-dft-btn sticked-on">
+                                <button class="disable"> Go! </button>
+                            </div>
+                            <div class="search-results-wrapper">
+                                <div class="results search-results"></div>
+                            </div>
+                    </div>
+		            <div class="input-mega-wrapper">
+		                <div class="input-stretcher dft-stretcher">
+                            <div class="input input-std input-wrapper wrapper-sunset-style">
+                                <div class="input-dft-wrapper">
+                                    <div class="input-std input-dft-icon">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="input-stretched input-std input-dft-search search-bar">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-std input-dft-btn sticked-on">
+                            <button class="disable"> Go! </button>
+                        </div>
+		                <div class="search-results-wrapper">
+		                    <div class="results search-results"></div>
+                        </div>
+                    </div>
+		            <div class="input-mega-wrapper">
+		                <div class="input-stretcher dft-stretcher">
+                            <div class="input input-std input-wrapper wrapper-blue-lagoon-style">
+                                <div class="input-dft-wrapper">
+                                    <div class="input-std input-dft-icon">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="input-stretched input-std input-dft-search search-bar">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-std input-dft-btn sticked-on">
+                            <button class="disable"> Go! </button>
+                        </div>
+		                <div class="search-results-wrapper">
+		                    <div class="results search-results"></div>
+                        </div>
+                    </div>
+		            <div class="input-mega-wrapper">
+		                <div class="input-stretcher dft-stretcher">
+                            <div class="input input-std input-wrapper wrapper-bloody-style">
+                                <div class="input-dft-wrapper">
+                                    <div class="input-std input-dft-icon">
+                                        <i class="fa fa-globe" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="input-stretched input-std input-dft-search search-bar">
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-std input-dft-btn sticked-on">
+                            <button class="disable"> Go! </button>
+                        </div>
+		                <div class="search-results-wrapper">
+		                    <div class="results search-results"></div>
+                        </div>
+                    </div>
+                </div> <!-- end section -->
         ';
 
         $js = '
