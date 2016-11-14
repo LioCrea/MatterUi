@@ -1,4 +1,4 @@
-# UnicornUi
+# MatterUI (old name: UnicornUI)
 CSS and Javascript stuffs for MatterPHP Framework
 
 
