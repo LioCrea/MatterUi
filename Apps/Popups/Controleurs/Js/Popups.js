@@ -1,6 +1,6 @@
 
-TestArea = function(){};
-TestArea.prototype = {
+Popups = function(){};
+Popups.prototype = {
     eventListeners: function () {
         var This = this;
 
