@@ -93,6 +93,7 @@
     font-family: "Lato Light";
     font-size: 18px;
     cursor: pointer;
+    border: none;
 }
 
 .dft-btn:focus {

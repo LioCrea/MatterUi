@@ -1,4 +1,4 @@
-# MatterUI (old name: UnicornUI)
+# UnicornUi
 CSS and Javascript stuffs for MatterPHP Framework
 
 
@@ -27,6 +27,8 @@ class="wrapper-ColorName-style"
 It will automatically define all extra components (borders, buttons, alpha etc) making your input look nice.
 
 If not satisfied, feel free to change the classes directly in the JS and CSS files.
+
+&nbsp;
 
 Inputs
 -------
@@ -69,3 +71,45 @@ Then, add it by inserting the drawing:
 <i class="fa fa-YourDrawing" aria-hidden="true"></i>
 ```
 &nbsp;
+
+PopItUp
+-----------------------------
+
+Popups you can link before any XHTTP requests or in the case of AJAX requests success or complete events.
+
+**How to use it**
+
+```Javascript
+            This.confirm({
+                        'type' : Your_Type
+            });
+```
+
+Method is called 'confirm()' and takes only one parameter, the type of popup you want.
+
+Specify the type of popup you want. We built 3 cases:
+
+- Success: will display a success message
+- Warning: will display a warning message
+- Danger: will display a danger message
+
+Default case: a callback is fired once you clicked the popup.
+You can change it directly inside the callback method of the template.
+
+**Use it before sending**   
+
+Just call the method before your XHTTP request. 
+
+The request will be considered as a callback event.
+
+**Use it as a confirmation**
+
+Just call the method within a 'success' or a 'complete' method.
+
+Consider the callback as a closing action.
+
+**CSS**
+
+You can change most of the properties directly in our MatterUi.css file.
+
+Find classes starting by 'popups-'.

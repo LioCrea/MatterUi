@@ -1,0 +1,55 @@
+
+
+.popups-right-align {
+    text-align: right;
+}
+
+.popups-margin-10 {
+    margin: 10px auto;
+}
+
+.popups-dft-confirm-btn {
+    margin: 6px;
+    border: none;
+    background: #ffffff;
+    font-family: 'Lato Light';
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.popups-slide-dynamic {
+    position: absolute;
+    width: 100%;
+    padding: 6px;
+    top: -220px;
+    left: 0;
+    border: 1px solid #93a3b5;
+    opacity: .8;
+    transition: .3s;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(158,158,158,1);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(158,158,158,1);
+    box-shadow: 1px 1px 2px 0px rgba(158,158,158,1);
+}
+
+.popups-dft-message {
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    padding: 6px;
+    text-align: left;
+    font-family : Lato Light;
+    font-size : 20px;
+}
+
+.popups-dft-icon {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    color: #ffffff;
+    font-size : 36px;
+    transition: .3s;
+    opacity: 0;
+}
