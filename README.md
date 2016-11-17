@@ -131,7 +131,7 @@ This.pictureManager({
             });
 ```
 
-Demo available here:
+Demo available here (like system):
 
 http://www.picturemanager.colorsarefat.com/
 
