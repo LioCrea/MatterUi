@@ -1,0 +1,201 @@
+
+body {
+    overflow-x: hidden;
+}
+
+.shadow {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(180,180,180,.8);
+}
+
+.likes {
+    position: absolute;
+    z-inndex: 10;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "Lato Light";
+    font-size: 20px;
+}
+
+.confirm-trash-wrapper {
+    position: absolute;
+    z-index: 3;
+    width: 70%;
+    height: 400px;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    webkit-transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: #ffffff;
+    text-align: center;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(138,138,138,1);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(138,138,138,1);
+    box-shadow: 6px 6px 5px 0px rgba(138,138,138,1);
+    transition: .3s;
+}
+
+
+.picture-container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.picture-column,
+.picture-column-trash {
+    display: inline-block;
+    vertical-align: top !important;
+    height: 60px;
+    text-align: center;
+}
+
+.picture-column:first-child {
+    margin-left: 0;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.active-pictures {
+    position: relative;
+    height: auto;
+    border: 1px solid rgb(210,210,210);
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(179,179,179,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(179,179,179,1);
+    box-shadow: 2px 2px 5px 0px rgba(179,179,179,1);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.picture-column img:hover {
+    opacity: .6;
+}
+
+.fullOpacity {
+    opacity: 1 !important;
+}
+
+.partialOpacity {
+    opacity: .5 !important;
+}
+
+.mask {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(200,200,200);
+    opacity: .5;
+}
+
+.like-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.like-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 2px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.like-btn i {
+    font-size: 18px;
+}
+
+.liked {
+    display: none;
+    color: rgba(230,102,101,.85) !important;
+}
+
+.liked-border {
+    opacity: .75;
+    transition: .2s;
+}
+
+.like-popup {
+    position: fixed;
+    z-index: 3;
+    width: 80%;
+    height: 70vh;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    webkit-transform: translate(-50%, -50%);
+    background: #ffffff;
+    transition: .35s;
+    overflow-x: hidden;
+}
+
+.close-action {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    font-size: 50px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.popup-header {
+    padding: 10px 0 0 10px;
+    color: #95a5a6;
+    font-family: "Lato Light";
+    font-size: 20px;
+}
+
+.popup-xs-line {
+    width: 70%;
+    height: 1px;
+    margin: 6px;
+    background: rgba(200,200,200,.4);
+}
+
+.liked-popup-shadow {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.shadow-custom {
+    background: rgba(230,102,101,.65);
+}
+
+.picture-wrapper {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: left;
+    overflow-x: hidden !important;
+}
+
+.liked-img-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    vertical-align: top;
+    cursor: pointer;
+    transition: .2s;
+    overflow-x: hidden;
+}
+
+.liked-img-wrapper:hover {
+    width: 300px;
+}

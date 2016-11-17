@@ -131,7 +131,13 @@ This.pictureManager({
             });
 ```
 
-Demo available here (like system):
+Just create a container within your HTML page using this specific class:
+
+```HTML
+        class="picture-container"
+```
+
+Demo available here:
 
 http://www.picturemanager.colorsarefat.com/
 
