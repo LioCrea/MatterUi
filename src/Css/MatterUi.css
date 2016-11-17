@@ -160,11 +160,10 @@ button > i {
 */
 
 .sq-btn {
-    width: 70px;
-    height: 70px;
+    width: 44px;
+    height: 44px;
     border-radius: 10px;
-    padding-bottom: 6px;
-    padding-left: 12px;
+    padding: 0;
     background: none;
     border: 1px solid #ffffff;
     cursor: pointer;
@@ -172,8 +171,8 @@ button > i {
 
 .sq-btn i {
     margin: 0 !important;
-    padding: 0 !important;
-    font-size: 43px;
+    padding-top: 3px !important;
+    font-size: 26px;
 }
 
 .bloody-rad {
