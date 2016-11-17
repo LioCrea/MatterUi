@@ -169,5 +169,12 @@ moveOut clones the picture and take it over the rest. Then a right to left motio
 - Extra notes
 
 If using the like mode, clicking the top left heart will slightly remove all the picture you didn't like but not extra view has been built for this.
+Example before clicking:
+
+https://cloud.githubusercontent.com/assets/14839127/20385913/ac7aa314-acb9-11e6-9451-49c3379e518e.png
+
+Example after clicking:
+
+https://cloud.githubusercontent.com/assets/14839127/20385914/ac7ad8d4-acb9-11e6-9161-714e18736751.png
  
 A blur is applied to pictures out of the screen. Scroll down will remove this blur.
