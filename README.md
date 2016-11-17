@@ -130,6 +130,11 @@ This.pictureManager({
                 'eraserAnimation' : 'slideUp'
             });
 ```
+
+Demo available here:
+
+http://www.picturemanager.colorsarefat.com/
+
 **How it works**
 
 It takes four or five arguments, depending on the mode you chose.
