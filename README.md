@@ -113,3 +113,61 @@ Consider the callback as a closing action.
 You can change most of the properties directly in our MatterUi.css file.
 
 Find classes starting by 'popups-'.
+
+Picture Manager
+----------------
+
+This plugin manages your pictures and organise them the way you want. 
+
+Totally responsive, you just have to call the plugin as shown here:
+
+```Javascript
+This.pictureManager({
+                'nbPictures' : 6,
+                'arrayPictures' : pictureArray,
+                'saveMode' : 'on',
+                'eraser' : false,
+                'eraserAnimation' : 'slideUp'
+            });
+```
+**How it works**
+
+It takes four or five arguments, depending on the mode you chose.
+
+Indeed, you can either use the plugin as a like system or an eraser system. 
+
+- Param #1: 'nbPictures'
+
+A little bit like Bootstrap, specify the number of rows you want to use to display your pictures.
+All your picture will then be organize as a function of this number, and be resized according to it.
+
+-  Param #2: arrayPicture
+
+This is your array of pictures. You don't have to put them in the HTML. Import them for your database for example.
+
+- Param #3: saveMode
+
+Takes two values: on and off. 
+
+If 'on', an extra icon will show up on the top left. Clicking on it will show you what you previously selected.
+
+Turn it off if you are using the eraser mode (this mode has its own saveMode built).
+
+- Param #4: eraser
+
+Boolean type: if true, then eraser mode is selected. Useful if you want to interact with pictures you don't want to see.
+If false, like mode is enable. Use it to build your picture like system.
+
+- Param #5: eraserAnimation
+
+Two modes are currently built to show an animation during the erase: slideUp et moveOut.
+
+slideUp reduces the height of the element you clicked until it reaches 0. Only the parent row is affected by this. 
+
+moveOut clones the picture and take it over the rest. Then a right to left motion is used to take the picture out of the screen.
+
+- Extra notes
+
+If using the like mode, clicking the top left heart will slightly remove all the picture you didn't like but not extra view has been built for this.
+ 
+A blur is applied to pictures out of the screen. Scroll down will remove this blur.
