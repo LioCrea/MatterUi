@@ -150,3 +150,25 @@
 button > i {
     margin-right: 6px;
 }
+
+/*RADIAL BTN*/
+
+.sq-btn {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bloody-rad {
+    background: #c0392b; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #FFF 0%, #c0392b 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#FFF), color-stop(100%,#c0392b)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #FFF 0%,#c0392b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #FFF 0%,#c0392b 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #FFF 0%,#c0392b 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #FFF 0%,#c0392b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#c0392b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
